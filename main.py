@@ -38,7 +38,7 @@ main()
 print("--- Begin report of books/frankenstein.txt ---") 
 print(f"{wordcount()} words found in the document")
 read_charactercount()
-
+print("--- End report ---")
 
 
 
