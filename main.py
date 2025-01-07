@@ -24,7 +24,12 @@ def charactercount():
             else:
                 charactercount_dictionary[x] = 1
         
-    print(charactercount_dictionary)  
+    return(charactercount_dictionary)  
+
+def read_charactercount():
+    char_count_dict = charactercount()
+    for key, value in char_count_dict.items():
+        print(f"The '{key}' character was found {value} times")
     
     
 
@@ -32,7 +37,10 @@ def charactercount():
 main()
 print("--- Begin report of books/frankenstein.txt ---") 
 print(f"{wordcount()} words found in the document")
+read_charactercount()
 
 
 
-charactercount()
+
+
+
